@@ -1,0 +1,22 @@
+
+.botones__btn {
+    height: 60px;
+    padding: 20px;
+    margin: auto;
+
+    .btn {
+        text-decoration: none;
+        border-radius: 15px;
+
+        &--ver_mas {
+            background-color: rgb(114, 114, 114);
+            color: white;
+        }
+        
+        &--saber_mas {
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+        }
+
+    }
+} 
