@@ -5,6 +5,39 @@
 @import "footer";
 @import "botones";
 
+
+
+/*---------------  BODY --------------------*/
+
 .page {
-   margin: 0% 7% 0% 7%;
+   margin: 8% 7% 0% 7%;
+}
+
+/*--------------- MEDIA QUERIES --------------*/
+
+
+@media (max-width: 768px) {
+   .page {
+      margin-top: 15%;
+   }
+}
+
+@media (max-width: 576px) {
+   .page {
+      margin-top: 25%;
+   }
+   #blackBlackdragon {
+      max-width: 300px !important;   
+   }
+}
+
+@media (max-width: 361px) {
+   .page {
+      margin-top: 30%;
+   }
+
+   #blackBlackdragon {
+      max-width: 250px !important;   
+   }
+
 }

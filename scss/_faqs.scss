@@ -26,16 +26,19 @@ summary {
   cursor: copy;
   position: relative;
 }
+
 details > summary::after {
   position: absolute;
   content: "+";
   right: 20px;
 }
+
 details[open] > summary::after {
   position: absolute;
   content: "-";
   right: 20px;
 }
+
 details > summary::-webkit-details-marker {
   display: none;
 }

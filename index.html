@@ -7,27 +7,28 @@
 	<meta name="description" content="Tienda online de ropa y accesorios de moda urbana Black Dragon.">
 	<meta name="keywords" content="ropa, moda, remeras, buzos, gorras, camperas, DTG, sublimado, vinilo, comprar, personalizado">
 	<meta name="author" content="Teo Martin Gonzalez">
+	<meta property="og:image:type" content="image/png" href="./media/bdLogo.png"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="shortcut icon" type="image/png" href="./media/facon.png"/>  
+	<link rel="shortcut icon" type="image/png" href="./media/facon.png"/>
 	<title>Black Dragon - Tienda de Ropa Online</title>
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000000;">
-		<a class="navbar-brand" href="#"><h1>BLACK DRAGON</h1></a>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #000000;">
+		<a class="navbar-brand" href="./index.html"><h1>BLACK DRAGON</h1></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
+		<span><img src="./media/isotipo2.png" width="60px" alt="isotipo"></span>
 		</button>
-	  
+		
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		  <ul class="navbar-nav m-auto">
-			<li class="nav-item active">
-			  <a class="nav-link" href="./index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
+		  <ul class="navbar-nav m-auto text-center">
+			<li class="nav-item">
+			  <a class="nav-link font-weight-bold" href="./index.html" style="color: white;">Home <span class="sr-only">(current)</span></a>
 			</li>
 			
 			<li class="nav-item">
@@ -47,7 +48,7 @@
 			</li>
 		  </ul>
 		  <form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+			<input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" name="buscador">
 			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
 		  </form>
 		</div>
@@ -76,6 +77,8 @@
 			<span class="sr-only">Next</span>
 			</a>
 		</div>
+		
+		<hr>
 
 		<div class="destacados">
 			<h2>Destacados</h2>
@@ -83,35 +86,50 @@
 			<img id="destacada2" src="./media/destacada2.png" alt="destacados2"/>
 		</div>
 
-		<section class="contenedor">
-			<h2 class="tarjeta__titulo">
-				Shop
-			</h2> 
-			<div class="tarjeta">
-				<div class="tarjeta__productos">
-					<img class="tarjeta__img" src="./media/remeraKawaii.png"  alt="productoRemera"/>
-					<img class="tarjeta__img" src="./media/remeraArcoIris.png"  alt="productoRemera"/>
-					<img class="tarjeta__img" src="./media/remeraBartDiablo.png"  alt="productoRemera"/>
-					<img class="tarjeta__img" src="./media/remeraIlluminati.png"  alt="productoRemera"/>
-					<img class="tarjeta__img" src="./media/remeraHomer1.png"  alt="productoRemera"/>
-					<img class="tarjeta__img" src="./media/remeraCuteFrog.png" alt="productoRemera"/>	
-				</div>
-				<div class="botones__btn">	
-					<a href="./pages/shop.html" class="btn btn--ver_mas">
-						Ver Mas » 
-					</a>
-				</div>
-		</section>
+		<hr>
+
+		<div class="card-deck">
+			<div class="card">
+			  <img class="card-img-top" src="./media/remeraRetrowaveMiami.png" alt="remera Miami">
+			  <div class="card-body">
+				<h5 class="card-title">Retrowave</h5>
+				<p class="card-text">Los 80s estan mas vigentes que nunca. (La misma que usaba Don Jhonson 😎) </p>
+			  </div>
+			  <div class="card-footer card">
+				<a href="./pages/shop.html#shopping" class="btn btn-success">Comprar</a>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top" src="./media/remera80s.png" alt="remera 80s">
+			  <div class="card-body">
+				<h5 class="card-title">80s</h5>
+				<p class="card-text">¡Los 80s volvieron y ahora en forma de remeras 👕!</p>
+			  </div>
+			  <div class="card-footer card">
+				<a href="./pages/shop.html#shopping2" class="btn btn-success">Comprar</a>
+			  </div>
+			</div>
+			<div class="card">
+			  <img class="card-img-top" src="./media/remeraRetrowave.png" alt="remera Retrowave">
+			  <div class="card-body">
+				<h5 class="card-title">Retrowave Miami</h5>
+				<p class="card-text">La mas pedida! Proximamente nuevo stock disponible.</p>
+			  </div>
+			  <div class="card-footer card">
+				<small class="text-muted">Disponible a partir del 01/10</small>
+				<a href="./pages/shop.html#shopping" class="btn btn-secondary disabled">Sin stock</a>
+			  </div>
+			</div>
+		  </div>
 	
+		<hr>
 
 		<footer class="container-build">
 			<p class="float-right"><a href="./index.html">Ir al Inicio</a></p>
 			<p>&copy; 2020-2021 Black Dragon S.A &middot; <a href="#">Privacidad</a> &middot; <a href="#">Terminos y Condiciones</a></p>
 		</footer>
 	</div>
-    
 	
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
